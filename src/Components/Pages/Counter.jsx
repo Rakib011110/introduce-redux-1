@@ -6,7 +6,8 @@ import {
   increamentByValue,
 } from "../../Redux/Featured/Counter/CounterSlice";
 const Counter = () => {
-  const { count } = useSelector((state) => state.counter.count);
+  const count = useSelector((state) => state.counter.count);
+
   console.log(count);
   const dispatch = useDispatch();
   return (
